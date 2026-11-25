@@ -1,366 +1,266 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roti & Rasa - Bakery and Coffee</title>
+    <title>ROTI & RASA</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
-<header class="header">
+<header>
     <nav class="navbar">
-        <a href="#beranda" class="logo">ROTI <span>&</span> RASA.</a>
-
-        <ul class="nav-menu">
+        <h2>ROTI <span>&</span> RASA</h2>
+        <ul>
             <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#roti">Menu Roti</a></li>
-            <li><a href="#minuman">Menu Minuman</a></li>
-            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#roti">Roti</a></li>
+            <li><a href="#minuman">Minuman</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
         </ul>
-
-        <a href="#roti" class="nav-button">Pesan Sekarang</a>
+        <a href="#kontak" class="nav-button">Pesan Sekarang</a>
     </nav>
 </header>
 
-
-<!-- HERO / BERANDA -->
+<!-- HERO -->
 <section class="hero" id="beranda">
-
-    <div class="hero-text">
-        <p class="small-title">SELAMAT DATANG DI ROTI & RASA</p>
-
-        <h1>Temukan Rasa<br>
-            Favoritmu <span>di Sini!</span>
-        </h1>
-
-        <p class="description">
-            Berbagai pilihan roti dan minuman lezat untuk
-            menemani waktu santaimu setiap hari.
-            Dibuat dengan bahan berkualitas dan rasa istimewa.
+    <div class="hero-content">
+        <p class="subtitle">SELAMAT DATANG DI ROTI & RASA</p>
+        <h1>Nikmati Kelezatan<br>Dalam Setiap Gigitan</h1>
+        <p>
+            Berbagai pilihan roti dan minuman lezat
+            yang dibuat dengan bahan berkualitas.
         </p>
-
-        <a href="#roti" class="button">Lihat Menu →</a>
+        <a href="#roti" class="main-button">Lihat Produk</a>
     </div>
-
-    <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900"
-        alt="Aneka roti segar">
-    </div>
-
 </section>
-
 
 <!-- KEUNGGULAN -->
 <section class="advantages">
-
-    <div class="advantage-item">
-        <span>✦</span>
-        <div>
-            <h3>Selalu Segar</h3>
-            <p>Dibuat setiap hari.</p>
-        </div>
+    <div>
+        <h3>🍞</h3>
+        <h4>Rasa Lezat</h4>
+        <p>Dibuat dengan cita rasa istimewa.</p>
     </div>
-
-    <div class="advantage-item">
-        <span>✦</span>
-        <div>
-            <h3>Bahan Berkualitas</h3>
-            <p>Bahan pilihan terbaik.</p>
-        </div>
+    <div>
+        <h3>🥛</h3>
+        <h4>Bahan Berkualitas</h4>
+        <p>Menggunakan bahan pilihan.</p>
     </div>
-
-    <div class="advantage-item">
-        <span>✦</span>
-        <div>
-            <h3>Harga Terjangkau</h3>
-            <p>Lezat dan bersahabat.</p>
-        </div>
+    <div>
+        <h3>❤️</h3>
+        <h4>Dibuat dengan Cinta</h4>
+        <p>Disiapkan dengan penuh perhatian.</p>
     </div>
-
 </section>
 
-
-<!-- MENU ROTI -->
-<section class="product-section" id="roti">
-
+<!-- PRODUK ROTI -->
+<section class="products" id="roti">
     <div class="section-title">
-        <p class="small-title">ANEKA PILIHAN</p>
-        <h2>Roti Pilihan Kami</h2>
-        <p>Roti lezat untuk menemani harimu.</p>
+        <p>PILIHAN MENU</p>
+        <h2>Roti Favorit</h2>
     </div>
 
-    <div class="product-container">
+    <div class="product-grid">
 
-        <!-- ROTI 1 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
-            alt="Croissant Butter">
-
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600" alt="Croissant Butter">
             <div class="product-info">
-                <span class="tag">BEST SELLER</span>
+                <span class="tag">Favorit</span>
                 <h3>Croissant Butter</h3>
-                <p>Roti renyah dengan aroma mentega yang nikmat.</p>
-
-                <div class="price">
-                    <strong>Rp18.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Roti renyah dengan aroma mentega.</p>
+                <h4>Rp15.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo%20Roti%20%26%20Rasa,%20saya%20ingin%20memesan%20Croissant%20Butter." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- ROTI 2 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1608198093002-ad4e0054841a?w=600"
-            alt="Milk Bread">
-
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484a0?w=600" alt="Milk Bread">
             <div class="product-info">
-                <span class="tag">FRESH BREAD</span>
+                <span class="tag">Lembut</span>
                 <h3>Milk Bread</h3>
-                <p>Roti lembut dengan rasa susu yang manis.</p>
-
-                <div class="price">
-                    <strong>Rp15.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Roti susu lembut dan manis.</p>
+                <h4>Rp12.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Milk%20Bread." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- ROTI 3 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600"
-            alt="Chocolate Bread">
-
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600" alt="Chocolate Bread">
             <div class="product-info">
-                <span class="tag">FAVORIT</span>
+                <span class="tag">Manis</span>
                 <h3>Chocolate Bread</h3>
-                <p>Roti dengan isian cokelat yang lezat.</p>
-
-                <div class="price">
-                    <strong>Rp17.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Roti dengan isian cokelat lezat.</p>
+                <h4>Rp14.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Chocolate%20Bread." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- ROTI 4 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600"
-            alt="Sweet Donut">
-
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600" alt="Sweet Donut">
             <div class="product-info">
-                <span class="tag">SWEET TASTE</span>
+                <span class="tag">Populer</span>
                 <h3>Sweet Donut</h3>
-                <p>Donat empuk dengan berbagai topping manis.</p>
-
-                <div class="price">
-                    <strong>Rp12.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Donat lembut dengan topping manis.</p>
+                <h4>Rp10.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Sweet%20Donut." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- ROTI 5 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=600"
-            alt="Chocolate Muffin">
-
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600" alt="Chocolate Muffin">
             <div class="product-info">
-                <span class="tag">NEW MENU</span>
+                <span class="tag">Spesial</span>
                 <h3>Chocolate Muffin</h3>
-                <p>Kue muffin lembut dengan rasa cokelat.</p>
-
-                <div class="price">
-                    <strong>Rp16.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Kue cokelat lembut dan nikmat.</p>
+                <h4>Rp13.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Chocolate%20Muffin." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
     </div>
 </section>
-
 
 <!-- PROMO -->
 <section class="promo">
-
-    <div class="promo-text">
-        <p>SPESIAL UNTUK KAMU</p>
-        <h2>Teman Santai,<br>Rasa yang Istimewa.</h2>
-        <span>Nikmati roti dan minuman favorit dalam satu tempat.</span>
+    <div>
+        <p>PROMO SPESIAL</p>
+        <h2>Rasa Lezat, Harga Bersahabat!</h2>
+        <p>Nikmati pilihan menu favorit dari Roti & Rasa.</p>
     </div>
-
-    <a href="#minuman">Lihat Minuman →</a>
-
 </section>
 
-
-<!-- MENU MINUMAN -->
-<section class="product-section drinks" id="minuman">
-
+<!-- PRODUK MINUMAN -->
+<section class="products" id="minuman">
     <div class="section-title">
-        <p class="small-title">FRESH AND DELICIOUS</p>
-        <h2>Minuman Favorit</h2>
-        <p>Segarkan harimu dengan pilihan minuman kami.</p>
+        <p>SEGARKAN HARIMU</p>
+        <h2>Minuman Pilihan</h2>
     </div>
 
-    <div class="product-container">
+    <div class="product-grid">
 
-        <!-- MINUMAN 1 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
-            alt="Iced Coffee Latte">
-
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Iced Coffee Latte">
             <div class="product-info">
-                <span class="tag">COFFEE</span>
+                <span class="tag">Favorit</span>
                 <h3>Iced Coffee Latte</h3>
-                <p>Perpaduan kopi dan susu yang creamy.</p>
-
-                <div class="price">
-                    <strong>Rp20.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Kopi susu dingin yang nikmat.</p>
+                <h4>Rp18.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Iced%20Coffee%20Latte." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- MINUMAN 2 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600"
-            alt="Iced Matcha">
-
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600" alt="Iced Matcha">
             <div class="product-info">
-                <span class="tag">NON COFFEE</span>
+                <span class="tag">Populer</span>
                 <h3>Iced Matcha</h3>
-                <p>Matcha lembut dengan susu yang segar.</p>
-
-                <div class="price">
-                    <strong>Rp22.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Minuman matcha segar dan creamy.</p>
+                <h4>Rp17.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Iced%20Matcha." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- MINUMAN 3 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600"
-            alt="Iced Chocolate">
-
+            <img src="https://images.unsplash.com/photo-1542990253-0b8be9c9a6a3?w=600" alt="Iced Chocolate">
             <div class="product-info">
-                <span class="tag">CHOCOLATE</span>
+                <span class="tag">Manis</span>
                 <h3>Iced Chocolate</h3>
-                <p>Minuman cokelat dingin yang nikmat.</p>
-
-                <div class="price">
-                    <strong>Rp19.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Cokelat dingin dengan rasa nikmat.</p>
+                <h4>Rp16.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Iced%20Chocolate." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- MINUMAN 4 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=600"
-            alt="Fresh Lemon Tea">
-
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600" alt="Fresh Lemon Tea">
             <div class="product-info">
-                <span class="tag">FRESH DRINK</span>
+                <span class="tag">Segar</span>
                 <h3>Fresh Lemon Tea</h3>
-                <p>Teh segar dengan perpaduan rasa lemon.</p>
-
-                <div class="price">
-                    <strong>Rp15.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Teh lemon segar untuk menemani harimu.</p>
+                <h4>Rp12.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Fresh%20Lemon%20Tea." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
-        <!-- MINUMAN 5 -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600"
-            alt="Strawberry Milk">
-
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600" alt="Strawberry Milk">
             <div class="product-info">
-                <span class="tag">FRESH DRINK</span>
+                <span class="tag">Spesial</span>
                 <h3>Strawberry Milk</h3>
-                <p>Susu segar dengan rasa stroberi.</p>
-
-                <div class="price">
-                    <strong>Rp18.000</strong>
-                    <a href="#kontak">Beli</a>
-                </div>
+                <p>Susu dengan rasa stroberi yang manis.</p>
+                <h4>Rp15.000</h4>
+                <a class="order-button" href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Strawberry%20Milk." target="_blank">Pesan Sekarang</a>
             </div>
         </div>
 
     </div>
 </section>
 
+<!-- TENTANG -->
+<section class="about">
+    <h2>Tentang Roti & Rasa</h2>
+    <p>
+        Roti & Rasa hadir untuk memberikan pengalaman menikmati
+        roti dan minuman yang lezat, berkualitas, dan cocok
+        menemani setiap waktu bersama orang tersayang.
+    </p>
+</section>
 
-<!-- TENTANG KAMI -->
-<section class="about" id="tentang">
-
-    <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800"
-        alt="Suasana kedai kopi">
-    </div>
-
-    <div class="about-text">
-        <p class="small-title">TENTANG KAMI</p>
-
-        <h2>Lebih dari Sekadar<br>Roti dan Minuman.</h2>
-
-        <p>
-            Roti & Rasa hadir untuk memberikan pengalaman
-            menikmati roti dan minuman dengan rasa istimewa.
-            Kami percaya bahwa makanan dan minuman sederhana
-            dapat membuat waktu santaimu lebih menyenangkan.
-        </p>
-
-        <a href="#kontak" class="button">Hubungi Kami</a>
-        <a href="https://wa.me/6281234567890?text=Halo%20Roti%20%26%20Rasa,%20saya%20ingin%20memesan%20Croissant%20Butter."
-   class="order-button" target="_blank">
-
-   Pesan Sekarang
-
+<!-- PEMESANAN -->
+<section class="contact" id="kontak">
+    <div class="contact-content">
+        <p class="subtitle">PESANAN MUDAH DAN PRAKTIS</p>
+        <h2>Ingin Menikmati Menu Kami?</h2>
+        <p>Hubungi kami melalui WhatsApp untuk melakukan pemesanan.</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Roti%20%26%20Rasa,%20saya%20ingin%20bertanya%20tentang%20pemesanan."
+           target="_blank" class="main-button">
+            Hubungi WhatsApp
         </a>
     </div>
-
 </section>
 
+<!-- LOKASI -->
+<section class="location" id="lokasi">
+    <div class="section-title">
+        <p>KUNJUNGI TOKO KAMI</p>
+        <h2>Lokasi Roti & Rasa</h2>
+    </div>
+
+    <div class="location-content">
+        <div class="location-info">
+            <h3>📍 Alamat Toko</h3>
+            <p>Jl. Raya Darmo, Surabaya, Jawa Timur, Indonesia</p>
+
+            <h3>🕒 Jam Operasional</h3>
+            <p>Setiap hari, pukul 08.00 - 21.00 WIB</p>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Jalan+Raya+Darmo+Surabaya"
+               target="_blank" class="map-button">
+                Lihat Lokasi di Google Maps
+            </a>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://maps.google.com/maps?q=Jalan%20Raya%20Darmo%20Surabaya&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
 
 <!-- FOOTER -->
-<footer id="kontak">
-
-    <div class="footer-container">
-
-        <div class="footer-brand">
-            <h2>ROTI <span>&</span> RASA.</h2>
-            <p>Teman terbaik untuk setiap waktu.</p>
-        </div>
-
-        <div>
-            <h3>Menu</h3>
-            <a href="#beranda">Beranda</a>
-            <a href="#roti">Menu Roti</a>
-            <a href="#minuman">Menu Minuman</a>
-        </div>
-
-        <div>
-            <h3>Informasi</h3>
-            <p>Senin - Sabtu</p>
-            <p>08.00 - 21.00 WIB</p>
-            <p>Indonesia</p>
-        </div>
-
-    </div>
-
-    <div class="copyright">
-        © 2026 Roti & Rasa. Semua Hak Dilindungi.
-    </div>
-
+<footer>
+    <h2>ROTI <span>&</span> RASA</h2>
+    <p>Teman terbaik untuk setiap rasa dan cerita.</p>
+    <p class="copyright">© 2026 Roti & Rasa. Semua Hak Dilindungi.</p>
 </footer>
 
 </body>
