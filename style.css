@@ -1,4 +1,7 @@
-/* RESET */
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,486 +11,678 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fffdf9;
-    color: #38291f;
+    background: #fffdf9;
+    color: #3f3027;
 }
 
-/* NAVBAR */
-header {
-    background-color: #fffdf9;
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.header {
+    width: 100%;
+    background: #fffdf9;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 .navbar {
     max-width: 1200px;
     margin: auto;
-    padding: 20px 35px;
+    min-height: 80px;
+    padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 29px;
-    color: #543a2a;
+    font-size: 25px;
+    font-weight: 700;
+    color: #543b2d;
+    white-space: nowrap;
 }
 
-.logo span {
+.logo span,
+.footer-brand span {
     color: #bd8055;
 }
 
-.navbar ul {
+.nav-menu {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 30px;
+    gap: 27px;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: #5e5148;
-    font-size: 13px;
+.nav-menu a {
+    color: #59483d;
+    font-size: 12px;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.navbar ul li a:hover {
+.nav-menu a:hover {
     color: #b8794f;
 }
 
 .nav-button {
-    text-decoration: none;
-    background: #634532;
+    background: #654632;
     color: white;
     padding: 12px 20px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 11px;
+    transition: 0.3s;
+    white-space: nowrap;
 }
 
-/* HERO */
+.nav-button:hover {
+    background: #a87650;
+}
+
+
+/* =========================
+   HERO / BERANDA
+========================= */
+
 .hero {
     max-width: 1200px;
     margin: auto;
-    padding: 75px 35px;
+    padding: 65px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
 
-.hero-content {
+.hero-text {
     flex: 1;
 }
 
-.subtitle {
-    color: #b8794f;
-    letter-spacing: 3px;
+.small-title {
+    color: #b47a50;
     font-size: 11px;
     font-weight: 600;
+    letter-spacing: 3px;
     margin-bottom: 17px;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 53px;
-    line-height: 1.2;
-    color: #422e21;
-    margin-bottom: 22px;
+    font-size: 48px;
+    line-height: 1.25;
+    color: #493326;
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
     color: #b8794f;
 }
 
-.hero-desc {
+.description {
     color: #81746a;
     font-size: 13px;
     line-height: 2;
     max-width: 470px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
-.main-button {
+.button {
     display: inline-block;
     background: #694832;
     color: white;
-    text-decoration: none;
-    padding: 14px 27px;
+    padding: 13px 25px;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 12px;
     transition: 0.3s;
 }
 
-.main-button:hover {
-    background: #a66e48;
+.button:hover {
+    background: #a87650;
 }
 
 .hero-image {
     flex: 1;
+    max-width: 530px;
 }
 
 .hero-image img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 120px 10px 10px 10px;
+    border-radius: 100px 10px 10px 10px;
 }
 
-/* FEATURES */
-.features {
-    background: #f5eee5;
+
+/* =========================
+   KEUNGGULAN
+========================= */
+
+.advantages {
+    background: #f4ece2;
+    padding: 25px 30px;
     display: flex;
     justify-content: center;
-    padding: 30px 20px;
-    gap: 100px;
+    align-items: center;
+    gap: 90px;
 }
 
-.features h3 {
+.advantage-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.advantage-item span {
+    color: #b8794f;
+    font-size: 25px;
+}
+
+.advantage-item h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    color: #634532;
-    margin-bottom: 7px;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 
-.features p {
-    font-size: 11px;
-    color: #81746a;
+.advantage-item p {
+    color: #8a7b70;
+    font-size: 10px;
 }
 
-/* PRODUCTS */
-.products {
+
+/* =========================
+   BAGIAN PRODUK
+========================= */
+
+.product-section {
     max-width: 1200px;
     margin: auto;
-    padding: 85px 35px;
+    padding: 75px 30px;
 }
 
-.section-heading {
+.section-title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.section-heading h2 {
+.section-title h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    color: #493427;
-    margin-bottom: 12px;
+    font-size: 35px;
+    color: #493326;
+    margin-bottom: 10px;
 }
 
-.section-heading > p:last-child {
-    color: #8a7b70;
+.section-title > p:last-child {
     font-size: 12px;
+    color: #8a7b70;
 }
 
-.product-grid {
+
+/* KARTU PRODUK */
+
+.product-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 27px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
 }
 
 .product-card {
     background: white;
     border-radius: 9px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(76, 48, 28, 0.07);
+    border: 1px solid #eee7df;
+    box-shadow: 0 5px 18px rgba(68, 46, 31, 0.07);
     transition: 0.3s;
 }
 
 .product-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 12px 25px rgba(76, 48, 28, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(68, 46, 31, 0.13);
 }
 
 .product-card img {
     width: 100%;
-    height: 225px;
+    height: 205px;
     object-fit: cover;
 }
 
 .product-info {
-    padding: 20px;
+    padding: 18px;
 }
 
-.category {
-    color: #b8794f;
+.tag {
+    display: inline-block;
+    color: #ad754b;
+    background: #f7eee5;
+    padding: 5px 9px;
+    border-radius: 3px;
     font-size: 9px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 600;
 }
 
 .product-info h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 19px;
+    margin: 12px 0 8px;
+    color: #493326;
 }
 
 .product-info p {
     font-size: 11px;
-    color: #8b8078;
+    color: #8a7b70;
     line-height: 1.8;
     min-height: 40px;
 }
 
-.product-bottom {
+.price {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 17px;
     border-top: 1px solid #eee7df;
-    padding-top: 15px;
+    margin-top: 15px;
+    padding-top: 14px;
 }
 
-.product-bottom h4 {
+.price strong {
     color: #805438;
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.product-bottom a {
+.price a {
     background: #694832;
     color: white;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 11px;
+    padding: 8px 17px;
+    border-radius: 4px;
+    transition: 0.3s;
 }
 
-/* PROMO */
+.price a:hover {
+    background: #b8794f;
+}
+
+
+/* =========================
+   PROMO
+========================= */
+
 .promo {
-    background: linear-gradient(90deg, #4d3527, #896044);
+    background: linear-gradient(110deg, #4d3528, #896348);
     color: white;
-    padding: 55px 8%;
+    padding: 48px 8%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 25px;
 }
 
-.promo p {
+.promo-text > p {
     font-size: 10px;
     letter-spacing: 3px;
-    color: #e6c6a8;
+    color: #e8c7a9;
     margin-bottom: 12px;
 }
 
 .promo h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    margin-bottom: 13px;
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 12px;
 }
 
 .promo span {
     font-size: 12px;
-    color: #e9ddd3;
+    color: #eaded3;
 }
 
-.promo a {
-    color: #543a2a;
-    background: #fff6ed;
-    text-decoration: none;
-    padding: 14px 25px;
+.promo > a {
+    background: #fff7ef;
+    color: #654632;
+    padding: 13px 22px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 11px;
+    white-space: nowrap;
 }
 
-/* ABOUT */
+
+/* =========================
+   TENTANG KAMI
+========================= */
+
 .about {
-    background: #f7f0e8;
-    padding: 85px 8%;
+    background: #f6efe7;
+    padding: 75px 8%;
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 60px;
 }
 
-.about-image {
+.about-image,
+.about-text {
     flex: 1;
+    min-width: 0;
 }
 
 .about-image img {
     width: 100%;
-    height: 350px;
+    height: 330px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.about-content {
-    flex: 1;
-}
-
-.about-content h2 {
+.about-text h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 1.3;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    color: #493326;
 }
 
-.about-content p:not(.subtitle) {
+.about-text > p:not(.small-title) {
     color: #81746a;
     font-size: 12px;
     line-height: 2;
     margin-bottom: 25px;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     background: #38291f;
     color: white;
-    padding: 55px 8% 20px;
+    padding: 50px 8% 20px;
 }
 
-.footer-content {
+.footer-container {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap: 50px;
-    padding-bottom: 40px;
+    gap: 40px;
+    padding-bottom: 35px;
 }
 
-.footer-content .logo {
-    color: white;
-    margin-bottom: 15px;
-}
-
-.footer-content p,
-.footer-content a {
-    color: #c6b6a8;
-    font-size: 12px;
-    line-height: 2.5;
-    display: block;
-    text-decoration: none;
-}
-
-.footer-content h3 {
+.footer-brand h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 15px;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.footer-brand p,
+.footer-container p,
+.footer-container a {
+    color: #c9b8a9;
+    font-size: 11px;
+    line-height: 2.5;
+}
+
+.footer-container h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer-container a {
+    display: block;
+}
+
+.footer-container a:hover {
+    color: white;
 }
 
 .copyright {
-    border-top: 1px solid #604b3c;
+    border-top: 1px solid #665044;
     padding-top: 20px;
     text-align: center;
-    color: #c6b6a8;
-    font-size: 11px;
+    color: #c9b8a9;
+    font-size: 10px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+
+/* =========================
+   TAMPILAN TABLET
+========================= */
+
+@media (max-width: 900px) {
 
     .navbar {
         flex-wrap: wrap;
-        gap: 15px;
-        padding: 18px;
+        justify-content: space-between;
     }
 
-    .navbar ul {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 17px;
-    }
-
-    .navbar ul li a {
-        font-size: 11px;
-    }
-
-    .nav-button {
-        font-size: 10px;
-        padding: 10px 13px;
+    .nav-menu {
+        gap: 16px;
     }
 
     .hero {
-        flex-direction: column;
-        padding: 50px 22px;
-        gap: 35px;
+        gap: 25px;
     }
 
     .hero h1 {
         font-size: 39px;
     }
 
-    .hero-image img {
-        height: 280px;
-        border-radius: 70px 8px 8px 8px;
+    .advantages {
+        gap: 30px;
     }
 
-    .features {
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 18px;
+        min-height: auto;
+        gap: 13px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        order: 3;
+        justify-content: center;
+        gap: 0;
+        padding-top: 8px;
+        border-top: 1px solid #eee7df;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+
+    .nav-menu li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 45px 20px;
         flex-direction: column;
-        gap: 20px;
-        padding: 30px;
+        align-items: stretch;
+        gap: 28px;
     }
 
-    .products {
-        padding: 60px 20px;
+    .hero h1 {
+        font-size: 36px;
     }
 
-    .section-heading h2 {
-        font-size: 29px;
+    .description {
+        font-size: 12px;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        height: 230px;
+        border-radius: 55px 8px 8px 8px;
+    }
+
+    .advantages {
+        padding: 25px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .product-section {
+        padding: 55px 17px;
+    }
+
+    .section-title {
+        margin-bottom: 28px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-title > p:last-child {
+        font-size: 11px;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
     }
 
     .product-card img {
-        height: 160px;
+        height: 145px;
     }
 
     .product-info {
-        padding: 13px;
+        padding: 12px;
     }
 
     .product-info h3 {
-        font-size: 16px;
+        font-size: 15px;
+        margin: 9px 0 6px;
     }
 
     .product-info p {
         font-size: 10px;
+        min-height: 54px;
     }
 
-    .product-bottom h4 {
-        font-size: 12px;
+    .tag {
+        font-size: 8px;
+        padding: 4px 6px;
+    }
+
+    .price {
+        margin-top: 10px;
+        padding-top: 10px;
+        gap: 5px;
+    }
+
+    .price strong {
+        font-size: 11px;
+    }
+
+    .price a {
+        padding: 7px 10px;
+        font-size: 10px;
     }
 
     .promo {
+        padding: 38px 22px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 25px;
-        padding: 45px 25px;
     }
 
     .promo h2 {
         font-size: 29px;
     }
 
+    .promo span {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
     .about {
+        padding: 50px 20px;
         flex-direction: column;
-        padding: 55px 22px;
         gap: 30px;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
     }
 
     .about-image img {
-        height: 260px;
+        height: 230px;
     }
 
-    .about-content h2 {
-        font-size: 30px;
+    .about-text h2 {
+        font-size: 29px;
     }
 
-    .footer-content {
+    .footer-container {
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 25px;
     }
 
-    .footer-content > div:first-child {
-        grid-column: span 2;
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    footer {
+        padding: 40px 22px 18px;
     }
 }
 
-@media (max-width: 380px) {
-    .product-grid {
+
+/* HP KECIL */
+
+@media (max-width: 360px) {
+
+    .nav-menu a {
+        font-size: 9px;
+    }
+
+    .product-container {
         grid-template-columns: 1fr;
     }
+
+    .product-card img {
+        height: 190px;
     }
+
+    .product-info h3 {
+        font-size: 18px;
+    }
+}
