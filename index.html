@@ -3,198 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rasa Rumah - Toko Roti dan Minuman</title>
+    <title>Roti & Rasa | Bakery & Coffee</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">RASA<span>RUMAH.</span></div>
-        <nav>
-            <a href="#beranda">Beranda</a>
-            <a href="#roti">Menu Roti</a>
-            <a href="#minuman">Menu Minuman</a>
-            <a href="#tentang">Tentang Kami</a>
-        </nav>
-    </header>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Roti<span>&</span>Rasa.</h2>
 
-    <!-- Beranda -->
-    <section class="beranda" id="beranda">
-        <div class="isi-beranda">
-            <p class="label">SELAMAT DATANG DI RASA RUMAH</p>
-            <h1>Temukan Rasa<br>Favoritmu di Sini!</h1>
-            <p>
-                Berbagai pilihan roti dan minuman lezat
-                untuk menemani waktu santaimu setiap hari.
-            </p>
-            <a href="#roti" class="tombol">Lihat Menu</a>
-        </div>
-    </section>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#minuman">Minuman</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+        </ul>
 
-    <!-- Menu Roti -->
-    <section class="produk" id="roti">
-        <div class="judul">
-            <p>ANEKA PILIHAN</p>
-            <h2>Roti Pilihan</h2>
-            <span>Roti lezat untuk menemani harimu.</span>
-        </div>
+        <a href="#produk" class="nav-button">Belanja Sekarang</a>
+    </nav>
+</header>
 
-        <div class="daftar-produk">
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">FRESH BAKERY & COFFEE</p>
 
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" alt="Roti Manis">
-                <div class="isi-kartu">
-                    <h3>Roti Manis</h3>
-                    <p>Roti lembut dengan rasa manis.</p>
-                    <div class="harga">
-                        <strong>Rp10.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
+        <h1>Awali Hari dengan<br>
+        Rasa yang <span>Istimewa.</span></h1>
 
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500" alt="Croissant">
-                <div class="isi-kartu">
-                    <h3>Roti Croissant</h3>
-                    <p>Roti berlapis yang renyah.</p>
-                    <div class="harga">
-                        <strong>Rp15.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484df?w=500" alt="Roti Tawar">
-                <div class="isi-kartu">
-                    <h3>Roti Tawar</h3>
-                    <p>Roti lembut untuk sarapan.</p>
-                    <div class="harga">
-                        <strong>Rp12.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484df?w=500" alt="Roti Cokelat">
-                <div class="isi-kartu">
-                    <h3>Roti Cokelat</h3>
-                    <p>Roti dengan isian cokelat.</p>
-                    <div class="harga">
-                        <strong>Rp13.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500" alt="Donat">
-                <div class="isi-kartu">
-                    <h3>Donat</h3>
-                    <p>Donat lembut dengan taburan manis.</p>
-                    <div class="harga">
-                        <strong>Rp8.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Menu Minuman -->
-    <section class="produk bagian-minuman" id="minuman">
-        <div class="judul">
-            <p>MINUMAN PILIHAN</p>
-            <h2>Minuman Segar</h2>
-            <span>Temukan minuman favoritmu di sini.</span>
-        </div>
-
-        <div class="daftar-produk">
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=500" alt="Kopi Susu">
-                <div class="isi-kartu">
-                    <h3>Kopi Susu</h3>
-                    <p>Perpaduan kopi dan susu.</p>
-                    <div class="harga">
-                        <strong>Rp15.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="Kopi Latte">
-                <div class="isi-kartu">
-                    <h3>Kopi Latte</h3>
-                    <p>Kopi dengan susu yang lembut.</p>
-                    <div class="harga">
-                        <strong>Rp18.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=500" alt="Matcha">
-                <div class="isi-kartu">
-                    <h3>Matcha Latte</h3>
-                    <p>Minuman matcha yang nikmat.</p>
-                    <div class="harga">
-                        <strong>Rp17.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500" alt="Cokelat">
-                <div class="isi-kartu">
-                    <h3>Cokelat Dingin</h3>
-                    <p>Minuman cokelat yang menyegarkan.</p>
-                    <div class="harga">
-                        <strong>Rp15.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="kartu">
-                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=500" alt="Jus Buah">
-                <div class="isi-kartu">
-                    <h3>Jus Buah</h3>
-                    <p>Minuman buah yang segar.</p>
-                    <div class="harga">
-                        <strong>Rp12.000</strong>
-                        <button>Beli</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Tentang Kami -->
-    <section class="tentang" id="tentang">
-        <h2>Tentang Rasa Rumah</h2>
-        <p>
-            Rasa Rumah menyediakan berbagai pilihan roti
-            dan minuman dengan rasa yang nikmat,
-            kualitas terbaik, serta harga terjangkau.
-            Kami hadir untuk menemani waktu santaimu.
+        <p class="hero-desc">
+            Nikmati berbagai pilihan roti lembut dan minuman
+            segar yang dibuat dengan bahan berkualitas.
+            Temukan rasa favoritmu di Roti & Rasa.
         </p>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <h2>RASA RUMAH.</h2>
-        <p>Rasa Enak, Harga Bersahabat.</p>
-        <p class="copyright">Hak Cipta © 2026 Rasa Rumah</p>
-    </footer>
+        <a href="#produk" class="main-button">
+            Lihat Produk →
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900"
+        alt="Roti segar">
+    </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="features">
+    <div>
+        <h3>✦ Fresh Every Day</h3>
+        <p>Selalu dibuat segar setiap hari.</p>
+    </div>
+
+    <div>
+        <h3>✦ Bahan Berkualitas</h3>
+        <p>Menggunakan bahan pilihan terbaik.</p>
+    </div>
+
+    <div>
+        <h3>✦ Harga Terjangkau</h3>
+        <p>Rasa istimewa dengan harga bersahabat.</p>
+    </div>
+</section>
+
+<!-- PRODUK ROTI -->
+<section class="products" id="produk">
+    <div class="section-heading">
+        <p class="subtitle">OUR BAKERY</p>
+        <h2>Roti Pilihan Kami</h2>
+        <p>Temukan berbagai roti lezat untuk menemani harimu.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
+            alt="Croissant">
+            <div class="product-info">
+                <span class="category">BEST SELLER</span>
+                <h3>Croissant Butter</h3>
+                <p>Roti renyah dengan aroma mentega yang menggoda.</p>
+                <div class="product-bottom">
+                    <h4>Rp18.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e0054841a?w=600"
+            alt="Roti tawar">
+            <div class="product-info">
+                <span class="category">FRESH BREAD</span>
+                <h3>Milk Bread</h3>
+                <p>Roti lembut dengan rasa susu yang nikmat.</p>
+                <div class="product-bottom">
+                    <h4>Rp15.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600"
+            alt="Roti cokelat">
+            <div class="product-info">
+                <span class="category">FAVORITE</span>
+                <h3>Chocolate Bread</h3>
+                <p>Roti manis dengan isian cokelat yang lezat.</p>
+                <div class="product-bottom">
+                    <h4>Rp17.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600"
+            alt="Donat">
+            <div class="product-info">
+                <span class="category">SWEET TASTE</span>
+                <h3>Sweet Donut</h3>
+                <p>Donat empuk dengan topping manis.</p>
+                <div class="product-bottom">
+                    <h4>Rp12.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=600"
+            alt="Muffin">
+            <div class="product-info">
+                <span class="category">NEW MENU</span>
+                <h3>Chocolate Muffin</h3>
+                <p>Kue muffin lembut dengan rasa cokelat.</p>
+                <div class="product-bottom">
+                    <h4>Rp16.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+    <div>
+        <p>SPESIAL UNTUK KAMU</p>
+        <h2>Temukan Kenikmatan<br>
+        di Setiap Gigitan.</h2>
+        <span>Nikmati pilihan roti dan minuman favoritmu.</span>
+    </div>
+    <a href="#minuman">Jelajahi Menu →</a>
+</section>
+
+<!-- PRODUK MINUMAN -->
+<section class="products drinks" id="minuman">
+    <div class="section-heading">
+        <p class="subtitle">OUR DRINKS</p>
+        <h2>Minuman Favorit</h2>
+        <p>Segarkan harimu dengan minuman pilihan kami.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+            alt="Iced coffee">
+            <div class="product-info">
+                <span class="category">COFFEE</span>
+                <h3>Iced Coffee Latte</h3>
+                <p>Perpaduan kopi dan susu yang creamy.</p>
+                <div class="product-bottom">
+                    <h4>Rp20.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600"
+            alt="Matcha">
+            <div class="product-info">
+                <span class="category">NON COFFEE</span>
+                <h3>Iced Matcha</h3>
+                <p>Minuman matcha dengan rasa lembut dan segar.</p>
+                <div class="product-bottom">
+                    <h4>Rp22.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600"
+            alt="Chocolate drink">
+            <div class="product-info">
+                <span class="category">CHOCOLATE</span>
+                <h3>Iced Chocolate</h3>
+                <p>Cokelat dingin dengan rasa manis yang pas.</p>
+                <div class="product-bottom">
+                    <h4>Rp19.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=600"
+            alt="Lemon tea">
+            <div class="product-info">
+                <span class="category">FRESH DRINK</span>
+                <h3>Fresh Lemon Tea</h3>
+                <p>Teh segar dengan perpaduan rasa lemon.</p>
+                <div class="product-bottom">
+                    <h4>Rp15.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600"
+            alt="Strawberry drink">
+            <div class="product-info">
+                <span class="category">FRESH DRINK</span>
+                <h3>Strawberry Milk</h3>
+                <p>Susu segar dengan perpaduan stroberi.</p>
+                <div class="product-bottom">
+                    <h4>Rp18.000</h4>
+                    <a href="#kontak">+</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TENTANG KAMI -->
+<section class="about" id="tentang">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900"
+        alt="Suasana coffee shop">
+    </div>
+
+    <div class="about-content">
+        <p class="subtitle">ABOUT US</p>
+        <h2>Lebih dari Sekadar<br>Roti dan Minuman.</h2>
+        <p>
+            Roti & Rasa hadir untuk memberikan pengalaman
+            menikmati roti dan minuman dengan rasa yang
+            istimewa. Kami percaya bahwa hal sederhana
+            seperti roti dan secangkir minuman dapat
+            membuat harimu lebih menyenangkan.
+        </p>
+        <a href="#kontak" class="main-button">Hubungi Kami</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="kontak">
+    <div class="footer-content">
+        <div>
+            <h2 class="logo">Roti<span>&</span>Rasa.</h2>
+            <p>Teman terbaik untuk setiap waktu.</p>
+        </div>
+
+        <div>
+            <h3>Menu</h3>
+            <a href="#home">Beranda</a>
+            <a href="#produk">Roti</a>
+            <a href="#minuman">Minuman</a>
+        </div>
+
+        <div>
+            <h3>Informasi</h3>
+            <p>Senin - Sabtu</p>
+            <p>08.00 - 21.00 WIB</p>
+            <p>Indonesia</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 Roti & Rasa. Semua Hak Dilindungi.</p>
+    </div>
+</footer>
 
 </body>
 </html>
