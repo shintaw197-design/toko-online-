@@ -1,4 +1,4 @@
-/* PENGATURAN DASAR */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,358 +8,197 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fffdf9;
-    color: #3f3027;
+    background: #fffaf2;
+    color: #493323;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/* NAVBAR */
-.header {
-    background: #fffdf9;
-    width: 100%;
+header {
+    background: #fffaf2;
+    padding: 18px 7%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
 }
 
 .navbar {
-    max-width: 1200px;
-    min-height: 80px;
-    margin: auto;
-    padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 }
 
-.logo {
+.navbar h2, footer h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-weight: 700;
-    color: #543b2d;
-    white-space: nowrap;
+    color: #684832;
 }
 
-.logo span,
-.footer-brand span {
-    color: #bd8055;
+.navbar span, footer span {
+    color: #bd8b5b;
 }
 
-.nav-menu {
+.navbar ul {
     display: flex;
-    align-items: center;
     list-style: none;
-    gap: 25px;
+    gap: 28px;
 }
 
-.nav-menu a {
-    color: #59483d;
-    font-size: 12px;
-    font-weight: 500;
+.navbar a {
+    text-decoration: none;
+    color: #493323;
+    font-size: 13px;
 }
 
-.nav-menu a:hover {
-    color: #b8794f;
+.navbar ul a:hover {
+    color: #b47a4e;
 }
 
-.nav-button {
-    background: #654632;
-    color: white;
-    padding: 12px 20px;
+.nav-button, .main-button {
+    background: #684832;
+    color: white !important;
+    padding: 11px 20px;
     border-radius: 5px;
-    font-size: 11px;
-    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    transition: 0.3s;
 }
 
+.nav-button:hover, .main-button:hover {
+    background: #a87650;
+}
 
-/* BERANDA */
 .hero {
-    max-width: 1200px;
-    margin: auto;
-    padding: 65px 30px;
+    min-height: 440px;
+    background:
+    linear-gradient(rgba(35,22,12,0.55), rgba(35,22,12,0.55)),
+    url("https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1600")
+    center/cover;
     display: flex;
     align-items: center;
-    gap: 50px;
+    padding: 60px 10%;
+    color: white;
 }
 
-.hero-text {
-    flex: 1;
+.hero-content {
+    max-width: 550px;
 }
 
-.small-title {
-    color: #b47a50;
-    font-size: 11px;
-    font-weight: 600;
+.subtitle {
+    font-size: 12px;
     letter-spacing: 3px;
-    margin-bottom: 17px;
+    color: #d8ae7b;
+    margin-bottom: 15px;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    line-height: 1.25;
-    color: #493326;
-    margin-bottom: 20px;
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 18px;
 }
 
-.hero h1 span {
-    color: #b8794f;
+.hero-content p {
+    font-size: 14px;
+    margin-bottom: 25px;
 }
 
-.description {
-    color: #81746a;
-    font-size: 13px;
-    line-height: 2;
-    max-width: 470px;
-    margin-bottom: 28px;
-}
-
-.button {
-    display: inline-block;
-    background: #694832;
-    color: white;
-    padding: 13px 25px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-
-.button:hover {
-    background: #a87650;
-}
-
-.hero-image {
-    flex: 1;
-    max-width: 530px;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 100px 10px 10px 10px;
-}
-
-
-/* KEUNGGULAN */
 .advantages {
-    background: #f4ece2;
-    padding: 25px 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 90px;
+    gap: 70px;
+    padding: 40px 7%;
+    text-align: center;
+    background: #f5ead8;
 }
 
-.advantage-item {
-    display: flex;
-    align-items: center;
-    gap: 13px;
+.advantages h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
-.advantage-item span {
-    color: #b8794f;
-    font-size: 25px;
-}
-
-.advantage-item h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
+.advantages h4 {
     margin-bottom: 5px;
 }
 
-.advantage-item p {
-    color: #8a7b70;
-    font-size: 10px;
+.advantages p {
+    font-size: 12px;
+    color: #806a58;
 }
 
-
-/* BAGIAN PRODUK */
-.product-section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 75px 30px;
+.products {
+    padding: 65px 8%;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+}
+
+.section-title p {
+    color: #b47a4e;
+    font-size: 11px;
+    letter-spacing: 3px;
 }
 
 .section-title h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    color: #493326;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-top: 8px;
 }
 
-.section-title > p:last-child {
-    font-size: 12px;
-    color: #8a7b70;
-}
-
-
-/* SUSUNAN KARTU PRODUK */
-.product-container {
+.product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 25px;
 }
 
-
-/* KOTAK PRODUK */
 .product-card {
-    background: #f0d29a;
-    border-radius: 8px;
-    padding: 12px;
+    background: #f0d9b4;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(80, 55, 30, 0.08);
+    box-shadow: 0 4px 12px rgba(70,45,20,0.08);
     transition: 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(80, 55, 30, 0.15);
+    box-shadow: 0 8px 18px rgba(70,45,20,0.14);
 }
 
-
-/* GAMBAR PRODUK */
 .product-card img {
     width: 100%;
-    height: 175px;
+    height: 190px;
     object-fit: cover;
-    border-radius: 4px;
+    display: block;
 }
 
-
-/* INFORMASI PRODUK */
 .product-info {
-    padding: 12px 5px 5px;
+    padding: 18px;
 }
 
 .tag {
-    display: inline-block;
-    color: #93613d;
-    background: #fff4df;
-    padding: 4px 8px;
-    border-radius: 3px;
-    font-size: 9px;
-    letter-spacing: 1px;
-    font-weight: 600;
+    background: #fff4e2;
+    color: #96653d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 10px;
 }
 
 .product-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 19px;
-    color: #493326;
-    margin: 10px 0 7px;
+    font-size: 16px;
+    margin: 13px 0 7px;
 }
 
 .product-info p {
-    color: #68513e;
-    font-size: 11px;
-    line-height: 1.8;
-    min-height: 40px;
-}
-
-
-/* HARGA DAN TOMBOL BELI */
-.price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(100,70,40,0.2);
-    margin-top: 12px;
-    padding-top: 12px;
-}
-
-.price strong {
-    color: #654329;
-    font-size: 14px;
-}
-
-.price a {
-    background: #694832;
-    color: white;
-    font-size: 11px;
-    padding: 8px 16px;
-    border-radius: 4px;
-}
-
-.price a:hover {
-    background: #a87650;
-}
-
-
-/* PROMO */
-.promo {
-    background: linear-gradient(110deg, #4d3528, #896348);
-    color: white;
-    padding: 48px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-}
-
-.promo-text > p {
-    font-size: 10px;
-    letter-spacing: 3px;
-    color: #e8c7a9;
-    margin-bottom: 12px;
-}
-
-.promo h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-.promo span {
     font-size: 12px;
-    color: #eaded3;
+    color: #78614e;
+    min-height: 38px;
 }
 
-.promo > a {
-    background: #fff7ef;
-    color: #654632;
-    padding: 13px 22px;
-    border-radius: 5px;
-    font-size: 11px;
-    white-space: nowrap;
-}
-
-
-/* TENTANG KAMI */
-.about {
-    background: #f6efe7;
-    padding: 75px 8%;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.about-image,
-.about-text {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    height: 330px;
-    object-fit: cover;
-    border-radius: 8px;
+.product-info h4 {
+    color: #684832;
+    margin-top: 12px;
+    font-size: 16px;
 }
 
 .order-button {
@@ -367,11 +206,12 @@ a {
     text-align: center;
     background: #684832;
     color: white;
-    padding: 10px;
+    padding: 11px;
     border-radius: 5px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
-    margin-top: 12px;
+    margin-top: 14px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -379,285 +219,259 @@ a {
     background: #a87650;
 }
 
-.about-text h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    line-height: 1.3;
-    margin-bottom: 18px;
-    color: #493326;
+.promo {
+    background: #684832;
+    color: white;
+    padding: 45px 8%;
+    text-align: center;
 }
 
-.about-text > p:not(.small-title) {
-    color: #81746a;
-    font-size: 12px;
-    line-height: 2;
+.promo p:first-child {
+    color: #e5bc8b;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+
+.promo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.about {
+    padding: 60px 15%;
+    text-align: center;
+    background: #f5ead8;
+}
+
+.about h2, .contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #806a58;
+}
+
+/* PEMESANAN */
+.contact {
+    padding: 65px 8%;
+    text-align: center;
+    background: #fffaf2;
+}
+
+.contact-content {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contact p:not(.subtitle) {
+    font-size: 13px;
+    color: #806a58;
     margin-bottom: 25px;
 }
 
-
-/* FOOTER */
-footer {
-    background: #38291f;
-    color: white;
-    padding: 50px 8% 20px;
+.contact .main-button {
+    margin-top: 5px;
 }
 
-.footer-container {
+/* LOKASI */
+.location {
+    padding: 65px 8%;
+    background: #f5ead8;
+}
+
+.location-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
-    padding-bottom: 35px;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 30px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.footer-brand h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    margin-bottom: 12px;
+.location-info {
+    background: #fffaf2;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-.footer-brand p,
-.footer-container p,
-.footer-container a {
-    color: #c9b8a9;
-    font-size: 11px;
-    line-height: 2.5;
-}
-
-.footer-container h3 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 12px;
+.location-info h3 {
     font-size: 16px;
+    margin-bottom: 8px;
 }
 
-.footer-container a {
+.location-info p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #806a58;
+    margin-bottom: 25px;
+}
+
+.map-button {
+    display: inline-block;
+    background: #684832;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.map-button:hover {
+    background: #a87650;
+}
+
+.map {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.map iframe {
     display: block;
 }
 
-.copyright {
-    border-top: 1px solid #665044;
-    padding-top: 20px;
+/* FOOTER */
+footer {
+    background: #493323;
+    color: white;
     text-align: center;
-    color: #c9b8a9;
+    padding: 35px 10px;
+}
+
+footer h2 {
+    color: #fffaf2;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #e4d1bd;
+}
+
+.copyright {
+    margin-top: 18px;
     font-size: 10px;
 }
 
-
-/* TABLET */
-@media (max-width: 900px) {
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
 
     .navbar {
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 15px;
     }
 
-    .nav-menu {
-        gap: 16px;
+    .navbar ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 17px;
     }
 
-    .hero h1 {
-        font-size: 39px;
+    .navbar ul a {
+        font-size: 11px;
     }
 
-    .advantages {
-        gap: 30px;
-    }
-
-    .product-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* HP */
-@media (max-width: 600px) {
-
-    .navbar {
-        padding: 15px 18px;
-        gap: 13px;
-    }
-
-    .logo {
-        font-size: 22px;
+    .navbar h2 {
+        font-size: 19px;
     }
 
     .nav-button {
+        font-size: 10px;
         padding: 9px 12px;
-        font-size: 10px;
-    }
-
-    .nav-menu {
-        width: 100%;
-        order: 3;
-        justify-content: center;
-        gap: 0;
-        padding-top: 8px;
-        border-top: 1px solid #eee7df;
-    }
-
-    .nav-menu li {
-        flex: 1;
-        text-align: center;
-    }
-
-    .nav-menu a {
-        font-size: 10px;
     }
 
     .hero {
-        padding: 45px 20px;
-        flex-direction: column;
-        gap: 28px;
+        min-height: 350px;
+        padding: 45px 7%;
     }
 
     .hero h1 {
-        font-size: 36px;
-    }
-
-    .description {
-        font-size: 12px;
-    }
-
-    .hero-image {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .hero-image img {
-        height: 230px;
-        border-radius: 55px 8px 8px 8px;
+        font-size: 32px;
     }
 
     .advantages {
-        padding: 25px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
+        gap: 20px;
+        padding: 30px 5%;
     }
 
-    .product-section {
-        padding: 55px 17px;
+    .advantages p {
+        font-size: 10px;
     }
 
-    .section-title {
-        margin-bottom: 28px;
+    .products {
+        padding: 45px 5%;
     }
 
-    .section-title h2 {
-        font-size: 28px;
-    }
-
-    /* DUA KARTU DALAM SATU BARIS */
-    .product-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 13px;
     }
 
-    /* GAMBAR KARTU SERAGAM */
-    .product-card {
-        padding: 8px;
-    }
-
     .product-card img {
-        width: 100%;
         height: 125px;
-        object-fit: cover;
     }
 
     .product-info {
-        padding: 10px 3px 4px;
-    }
-
-    .product-info h3 {
-        font-size: 14px;
-        margin: 8px 0 6px;
-    }
-
-    .product-info p {
-        font-size: 10px;
-        min-height: 55px;
-    }
-
-    .tag {
-        font-size: 7px;
-        padding: 4px 6px;
-    }
-
-    .price {
-        margin-top: 10px;
-        padding-top: 10px;
-        gap: 4px;
-    }
-
-    .price strong {
-        font-size: 10px;
-    }
-
-    .price a {
-        padding: 6px 9px;
-        font-size: 9px;
-    }
-
-    .promo {
-        padding: 38px 22px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .promo h2 {
-        font-size: 29px;
-    }
-
-    .about {
-        padding: 50px 20px;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .about-image,
-    .about-text {
-        width: 100%;
-    }
-
-    .about-image img {
-        height: 230px;
-    }
-
-    .about-text h2 {
-        font-size: 29px;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
-
-    footer {
-        padding: 40px 22px 18px;
-    }
-}
-
-
-/* HP KECIL */
-@media (max-width: 360px) {
-
-    .nav-menu a {
-        font-size: 9px;
-    }
-
-    .product-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 9px;
-    }
-
-    .product-card img {
-        height: 110px;
+        padding: 12px;
     }
 
     .product-info h3 {
         font-size: 13px;
     }
+
+    .product-info p {
+        font-size: 10px;
+    }
+
+    .product-info h4 {
+        font-size: 13px;
+    }
+
+    .order-button {
+        font-size: 10px;
+        padding: 9px 5px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .location-info {
+        padding: 22px;
+    }
+
+    .promo h2 {
+        font-size: 24px;
+    }
+
+    .about {
+        padding: 45px 8%;
+    }
 }
+
+@media (max-width: 380px) {
+    .navbar ul {
+        gap: 11px;
+    }
+
+    .navbar ul a {
+        font-size: 10px;
+    }
+
+    .product-grid {
+        gap: 10px;
+    }
+        }
